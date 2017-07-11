@@ -25,11 +25,11 @@ Assumption :
 3. Console coordinate : (x,y) origin coordinate is the left top corner. X coordinate grows horizontally towards right. whereas y coordinate wi moves vertically towards bottom of console.
 
 (0,0)         
-  ------------X
-  
-  |              
-  |           
-  |           
+  ------------X                                                                                                                         
+  |                                                                                                                                     
+  |                                                                                                                                     
+  |                                                                                                                                     
+  |                                                                                                                                       
   y           
   
   
