@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.csg.cs.drawing.command.CommandDriver;
 import com.csg.cs.drawing.exceptions.DrawingException;
 
-public class DrawingAppLauncher {
+public class DrawingAppLauncher{
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

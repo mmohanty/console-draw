@@ -29,8 +29,8 @@ public class TestLine {
 	
 	@Before
 	public void setup(){
-		height = 4;
-		width = 20;
+		height = 0;
+		width = 0;
 		shape = new Line();
 	}
 	

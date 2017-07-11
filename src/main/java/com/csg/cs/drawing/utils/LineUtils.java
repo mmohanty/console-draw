@@ -10,6 +10,7 @@ public class LineUtils {
 				canvasTemplate.addBitToCanvasPaper(i, j, bit);			
 			}
 		}	
+		//canvasTemplate.addBitToCanvasPaper(0, 0, 'X');
   	}
 	
 }

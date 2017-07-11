@@ -3,7 +3,7 @@ package com.csg.cs.drawing.command;
 import com.csg.cs.drawing.constants.DrawingAppConstant;
 import com.csg.cs.drawing.exceptions.DrawingException;
 import com.csg.cs.drawing.exceptions.IllegalArgumentException;
-import com.csg.cs.drawing.paint.apies.DefaultShapeDecorator;
+import com.csg.cs.drawing.paint.apies.ConsoleShapeDecorator;
 import com.csg.cs.drawing.shapes.BucketFill;
 import com.csg.cs.drawing.shapes.Canvas;
 import com.csg.cs.drawing.shapes.Line;
@@ -23,19 +23,19 @@ public class CommandDriver {
 		LINE("L") {
 			@Override
 			public void execute() throws DrawingException{
-				Shape shape = new DefaultShapeDecorator(new Line());
+				Shape shape = new ConsoleShapeDecorator(new Line());
 				shape.makeShape(canvasTemplate, getParams().split(" "));
 			}
 		}, RECTANGLE("R") {
 			@Override
 			public void execute() throws DrawingException{
-				Shape shape = new DefaultShapeDecorator(new Rectangle());
+				Shape shape = new ConsoleShapeDecorator(new Rectangle());
 				shape.makeShape(canvasTemplate, getParams().split(" "));
 			}
 		}, FILL("B") {
 			@Override
 			public void execute() throws DrawingException{
-				Shape shape = new DefaultShapeDecorator(new BucketFill());
+				Shape shape = new ConsoleShapeDecorator(new BucketFill());
 				shape.makeShape(canvasTemplate, getParams().split(" "));
 			}
 		}, QUIT("Q") {
@@ -56,7 +56,7 @@ public class CommandDriver {
 				}catch(NumberFormatException ex){
 					throw new IllegalArgumentException("Illegal argument! Pass numeric value for width and height. Try again[C width height].");
 				}
-				Shape shape = new DefaultShapeDecorator(new Canvas());
+				Shape shape = new ConsoleShapeDecorator(new Canvas());
 				shape.makeShape(canvasTemplate, cmd);
 			}
 		};

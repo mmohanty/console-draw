@@ -12,11 +12,11 @@ public final class CanvasTemplate {
 		width+=2;
 		this.width = width;
 		this.height = height;
-		bitmap = new char[height][width];		
+		bitmap = new char[height][width];
 	}
 
-	public void addBitToCanvasPaper(int xCordinate, int yCordinate, char key){
-		bitmap[xCordinate][yCordinate] = key;
+	public void addBitToCanvasPaper(int yCordinate, int xCordinate, char key){
+		bitmap[yCordinate][xCordinate] = key;
 	}
 	
 	public char[][] getCanvasPaper() {
